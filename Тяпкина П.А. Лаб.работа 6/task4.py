@@ -28,23 +28,6 @@ def csv_to_list_dict(file):
             index_out = index_out + 1
         return list_dict
 
-'''        line1 = data_list[0].split(',')
-        line2 = data_list[1].split(',')
-        line3 = data_list[2].split(',')
-        line4 = data_list[3].split(',')
-
-        index = 0
-        dict_1 = {}
-        for row in headers_list:
-            dict_1[headers_list[index]] = line1[index]
-            index = index + 1
-        dict_2 = {}
-        index = 0
-        for row in headers_list:
-            dict_2[headers_list[index]] = line2[index]
-            index = index + 1
-        list_dict = [dict_1, dict_2]
-'''
 
 print(json.dumps(csv_to_list_dict(INPUT_FILE), indent=4))
 #
