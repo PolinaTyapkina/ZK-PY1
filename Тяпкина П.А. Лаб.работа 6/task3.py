@@ -25,9 +25,6 @@ def to_csv_file(headers=headers_list, rows=data, filename=OUTPUT_FILE, delimiter
         filename.writelines(new_line)
 
 
-to_csv_file()
-
-
 with open(OUTPUT_FILE) as output_f:
     for line in output_f:
         print(line, end="")
